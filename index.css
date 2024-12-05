@@ -20,10 +20,20 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.parallax3 {
+  background-image: url("Images/Meat.jpg");
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .section {
   text-align: center;
   padding: 50px 80px;
+  font-size: 30px;
   color: #777;
   background-color:white;
 }
