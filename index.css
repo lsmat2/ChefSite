@@ -1,0 +1,29 @@
+body, html {
+  height: 100%;
+}
+
+.parallax1 {
+  background-image: url("Images/FancyDish.JPG");
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  background-image: url("Images/Catering2.JPG");
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+  color: #777;
+  background-color:white;
+}
