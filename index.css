@@ -1,35 +1,51 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body, html {
   height: 100%;
 }
 
-.parallax1 {
-  background-image: url("Images/FancyDish.JPG");
-  height: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Header title */
+h1 {
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  padding-top: 40px;
 }
-.parallax2 {
-  background-image: url("Images/Catering2.JPG");
-  height: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+/* Navbar */
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+
+  display:flex;
+  justify-content: center;
 }
-.parallax3 {
-  background-image: url("Images/Meat.jpg");
+.navbar li {
+  padding: 10px;
+  float: left;
+}
+.navbar a {
+  text-decoration: none;
+  color: rgb(139, 139, 139);
+}
+.navbar a:hover {
+  color: rgb(220, 220, 220);
+}
+
+/* Parallax effects for images */
+.parallax {
   height: 100%;
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* Sections between parallax images */
 .section {
   text-align: center;
   padding: 50px 80px;
