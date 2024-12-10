@@ -5,8 +5,9 @@
   box-sizing: border-box;
 }
 body, html {
-  height: 100%;
+  height: 100%; /* Essential for parallax effect */
 }
+
 
 /* Header title */
 h1 {
@@ -33,6 +34,8 @@ p {
   font-weight: normal;
   color: rgb(139, 139, 139);
   text-align: center;
+  line-height: 1.5;
+  margin: 0 10%;
 }
 
 /* Navbar */
@@ -59,6 +62,7 @@ p {
   color: rgb(220, 220, 220);
 }
 
+
 /* Parallax effects for images */
 .parallax {
   height: 65%;
@@ -68,6 +72,7 @@ p {
   background-size: cover;
 }
 
+
 /* Sections between parallax images */
 .section {
   text-align: center;
@@ -75,5 +80,5 @@ p {
   font-size: 30px;
   color: #777;
   background-color:white;
-  min-height: 300px;
+  /* min-height: 300px; */
 }
