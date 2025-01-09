@@ -8,6 +8,27 @@ const dotsContainer1 = document.querySelector('.carousel-dots1');
 const dotsContainer2 = document.querySelector('.carousel-dots2');
 const dotsContainer3 = document.querySelector('.carousel-dots3');
 
+function init() {
+    initCarousel();
+    // initCarouselSwitch();
+}
+
+function initCarouselSwitch() {
+    var slideSwitch = 2;
+    setInterval(function() {
+        if (slideSwitch == 0) {
+            changeSlide1(1);
+            slideSwitch = 1;
+        } else if (slideSwitch == 1) {
+            changeSlide2(1);
+            slideSwitch = 2;
+        } else {
+            changeSlide3(1);
+            slideSwitch = 0;
+        }
+    }, 3000);
+}
+
 function initCarousel() {
     // Show current image
     images1[currentSlide1].style.display = 'block';
@@ -46,10 +67,20 @@ function initCarousel() {
 }
 
 function changeSlide1(n) {
-  images1[currentSlide1].style.display = 'none';
-  currentSlide1 = (currentSlide1 + n + images1.length) % images1.length;
-  images1[currentSlide1].style.display = 'block';
-  updateDots1();
+    // Display both, transition, hide
+    // let prevSlide = currentSlide1;
+    // let nextSlide = (currentSlide1 + n + images1.length) % images1.length;
+    // images1[prevSlide].style.display = 'block';
+    // images1[nextSlide].style.display = 'block';
+    // images1[prevSlide].style.transform = 'translateX(-100%)';
+    // images1[nextSlide].style.transform = 'translateX(0%)';
+    // images1[prevSlide].style.display = 'none';
+    // currentSlide1 = nextSlide;
+    // updateDots1();
+    images1[currentSlide1].style.display = 'none';
+    currentSlide1 = (currentSlide1 + n + images1.length) % images1.length;
+    images1[currentSlide1].style.display = 'block';
+    updateDots1();
 }
 function changeSlide2(n) {
   images2[currentSlide2].style.display = 'none';
@@ -80,4 +111,4 @@ function updateDots3() {
   dots[currentSlide3].style.backgroundColor = '#717171';
 }
 
-window.onload = initCarousel;
+window.onload = init;
